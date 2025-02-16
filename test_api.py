@@ -11,8 +11,6 @@ def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == 'Welcome to the API'
-
-
 """ 
 from fastapi import status
 import requests
